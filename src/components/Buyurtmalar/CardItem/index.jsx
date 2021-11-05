@@ -7,23 +7,8 @@ import {ReactComponent as Delete} from '../../../Icons/delete.svg'
 
 class index extends Component {
 
-    // state = {
-    //     lists: cardItemInfo,
-    // }
-    render() {
+      render() {
         const {id,url,title,category, price, additionalInfo } = this.props.value;
-
-        // const getName = (id) => {
-        //     const newData = this.state.lists.filter((value) => {
-        //         return value.id !== id;
-        //     })
-        //     console.log(newData);
-
-        //     this.setState({
-        //         lists:newData,
-        //     })
-        // }
-        
         return (
             <ItemContainer>
                 <ItemContainer.Logo src={url} />

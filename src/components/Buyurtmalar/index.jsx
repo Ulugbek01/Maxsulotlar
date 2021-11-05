@@ -3,7 +3,6 @@ import CardItem from './CardItem'
 import {cardItemInfo} from '../../utils/card.item';
 
 class index extends Component {
-
     state = {
         cardItemInfo,
     }
@@ -20,7 +19,7 @@ class index extends Component {
         }
         return (
             <div>
-                {cardItemInfo.map((value) => {
+                {this.state.cardItemInfo.map((value) => {
                     return (
                         <CardItem onDelete={onDelete} value = {value} key={value.id}/>
                     )
